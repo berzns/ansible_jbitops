@@ -9,6 +9,6 @@
    win_feature:
     name: 
     - FS-SMB1 
-    -Web-Server 
-    -Windows-Defender-Features
+    - Web-Server 
+    - Windows-Defender-Features
     state: absent
