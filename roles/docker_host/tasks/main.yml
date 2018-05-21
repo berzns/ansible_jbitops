@@ -7,5 +7,8 @@
 
 - name: Removed unused Windows features
    win_feature:
-    name: FS-SMB1 Web-Server Windows-Defender-Features
+    name: 
+    - FS-SMB1 
+    -Web-Server 
+    -Windows-Defender-Features
     state: absent
