@@ -12,3 +12,10 @@
     - Web-Server 
     - Windows-Defender-Features
     state: absent
+
+
+- name: Add a DockerMsftProvider powershell module and register a repository
+  win_psmodule:
+    name: DockerMsftProvider
+    repository: PSGallery
+    state: present
