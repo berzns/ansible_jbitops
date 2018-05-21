@@ -1,5 +1,5 @@
 ---
-- hosts: db
+- hosts: docker_hosts
   roles:
    - common
-   - docker_host
+   - docker_hosts
