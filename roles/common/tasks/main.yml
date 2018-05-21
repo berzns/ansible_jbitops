@@ -6,7 +6,7 @@
 
 - name: Create local admin
   win_user:
-    name: "{{Windows_Local_Admin_USERNAME}}"
-    password: "{{Windows_Local_Admin_PASSWORD}}"
+    name: "{{ Windows_Local_Admin_USERNAME }}"
+    password: "{{ Windows_Local_Admin_PASSWORD }}"
     groups: ["Administrators"]
     
