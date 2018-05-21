@@ -19,3 +19,7 @@
     name: DockerMsftProvider
     repository: PSGallery
     state: present
+
+- win_shell: Install-Package -Name docker -ProviderName DockerMsftProvider
+
+- win_shell: Restart-Computer -Force
