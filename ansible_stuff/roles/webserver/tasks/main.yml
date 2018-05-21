@@ -1,0 +1,10 @@
+---
+ - name: Enable IIS webserver
+   win_feature:
+     name: Web-Server
+     state: present
+ 
+ - name:  Deploy html website file jb.html
+   template:
+     src: iisstart.html
+     dest: c:\inetpub\wwwroot\iisstart.htm

@@ -1,0 +1,12 @@
+---
+- name: Install notepad++
+  win_chocolatey:
+    name: notepadplusplus
+    state: present
+
+- name: Create local admin
+  win_user:
+    name: janis
+    password: "JanBer07@20"
+    groups: ["Administrators"]
+    

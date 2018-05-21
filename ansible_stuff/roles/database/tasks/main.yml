@@ -1,0 +1,5 @@
+---
+- name: Install mysql
+  win_chocolatey:
+      name: mysql # required. Name of the package to be installed.,This must be a single package name.
+      state: present # not required. choices: absent;downgrade;latest;present;reinstalled. State of the package on the system.
