@@ -1,9 +1,9 @@
 ---
 - name: Install Windows Server 2016 Containers feature
-   win_feature:
-       name: Containers # required. Names of roles or features to install as a single feature or a comma-separated list of features.
-       include_sub_features: yes # not required. Adds all subfeatures of the specified feature.
-       state: present # not required. choices: present;absent. State of the features or roles on the system.
+  win_feature:
+    name: Containers # required. Names of roles or features to install as a single feature or a comma-separated list of features.
+    include_sub_features: yes # not required. Adds all subfeatures of the specified feature.
+    state: present # not required. choices: present;absent. State of the features or roles on the system.
 
 - name: Removed unused Windows features
    win_feature:
