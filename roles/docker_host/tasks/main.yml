@@ -6,7 +6,7 @@
     state: present # not required. choices: present;absent. State of the features or roles on the system.
 
 - name: Removed unused Windows features
-   win_feature:
+  win_feature:
     name: 
     - FS-SMB1 
     - Web-Server 
